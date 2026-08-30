@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>MailTrace AI | Analyzer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<aside class="sidebar">
+
+    <div class="brand">
+
+        <div class="logo">🛡️</div>
+
+        <div>
+            <h2>MAILTRACE</h2>
+            <small>AI SECURITY</small>
+        </div>
+
+    </div>
+
+    <nav>
+
+        <a href="index.html">📊 Dashboard</a>
+
+        <a class="active" href="analyzer.html">
+            📧 Email Analyzer
+        </a>
+
+        <a href="investigation.html">
+            🔎 Investigation
+        </a>
+
+        <a href="intelligence.html">
+            🌐 Intelligence
+        </a>
+
+        <a href="reports.html">
+            📄 Reports
+        </a>
+
+        <a href="about.html">
+            ℹ️ About
+        </a>
+
+    </nav>
+
+    <div class="system-status">
+
+        <span></span>
+
+        <div>
+            <b>System Online</b>
+            <small>Analysis Engine Ready</small>
+        </div>
+
+    </div>
+
+</aside>
+
+
+<main class="main">
+
+<header class="topbar">
+
+    <div>
+
+        <small class="eyebrow">
+            DIGITAL FORENSICS
+        </small>
+
+        <h1>Email Forensic Analyzer</h1>
+
+        <p>
+            Upload evidence and analyze suspicious email indicators.
+        </p>
+
+    </div>
+
+</header>
+
+
+<section class="analyzer-layout">
+
+
+<div class="upload-panel">
+
+    <div class="upload-icon">
+        ↑
+    </div>
+
+    <h2>Upload Email Evidence</h2>
+
+    <p>
+        Supported evidence format: .eml
+    </p>
+
+    <input
+        type="file"
+        id="emailFile"
+        accept=".eml">
+
+    <label
+        for="emailFile"
+        class="upload-btn">
+
+        Choose .EML File
+
+    </label>
+
+
+    <div class="or">
+        OR
+    </div>
+
+
+    <textarea
+        id="emailInput"
+        placeholder="Paste email headers or suspicious email content here..."></textarea>
+
+
+    <button
+        onclick="analyzeEmail()"
+        class="primary-btn full">
+
+        ⚡ RUN AI ANALYSIS
+
+    </button>
+
+
+    <div id="fileName"
+         class="file-name">
+
+    </div>
+
+</div>
+
+
+
+<div class="analysis-result">
+
+    <div class="result-header">
+
+        <div>
+
+            <small>AI THREAT ASSESSMENT</small>
+
+            <h2 id="resultTitle">
+                Awaiting Analysis
+            </h2>
+
+        </div>
+
+        <span
+            id="resultBadge"
+            class="status waiting">
+
+            WAITING
+
+        </span>
+
+    </div>
+
+
+    <div class="risk-result">
+
+        <div class="score">
+
+            <strong id="riskScore">
+                --
+            </strong>
+
+            <small>RISK</small>
+
+        </div>
+
+
+        <div>
+
+            <h3 id="classification">
+                Upload suspicious email
+            </h3>
+
+            <p id="explanation">
+                Analysis results will appear here.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="signals">
+
+        <div>
+            <span>Sender Identity</span>
+            <b id="senderResult">Waiting</b>
+        </div>
+
+        <div>
+            <span>Domain Reputation</span>
+            <b id="domainResult">Waiting</b>
+        </div>
+
+        <div>
+            <span>SPF</span>
+            <b id="spfResult">Waiting</b>
+        </div>
+
+        <div>
+            <span>DKIM</span>
+            <b id="dkimResult">Waiting</b>
+        </div>
+
+        <div>
+            <span>DMARC</span>
+            <b id="dmarcResult">Waiting</b>
+        </div>
+
+        <div>
+            <span>URL Analysis</span>
+            <b id="urlResult">Waiting</b>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<section class="finding-panel">
+
+    <h2>🧠 Explainable AI Findings</h2>
+
+    <div id="findingList">
+
+        <p class="muted">
+            Run an analysis to generate findings.
+        </p>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <span>MAILTRACE AI © 2026</span>
+
+    <span>
+        AI-assisted cybersecurity & digital forensics
+    </span>
+
+</footer>
+
+</main>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

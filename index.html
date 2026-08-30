@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MailTrace AI | SOC Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="logo">🛡️</div>
+            <div>
+                <h2>TEAM-CODEX</h2>
+                <small>AI SECURITY</small>
+            </div>
+        </div>
+
+        <nav>
+            <a class="active" href="index.html">📊 Dashboard</a>
+            <a href="analyzer.html">📧 Email Analyzer</a>
+            <a href="investigation.html">🔎 Investigation</a>
+            <a href="intelligence.html">🌐 Intelligence</a>
+            <a href="reports.html">📄 Reports</a>
+            <a href="about.html">ℹ️ About</a>
+        </nav>
+
+        <div class="system-status">
+            <span></span>
+            <div>
+                <b>System Online</b>
+                <small>AI Engine Ready</small>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+                <small class="eyebrow">SECURITY OPERATIONS CENTER</small>
+                <h1>Email Threat Intelligence</h1>
+                <p>Detect • Trace • Investigate • Explain</p>
+            </div>
+
+            <div class="top-actions">
+                <button class="lang-btn" onclick="toggleLanguage()">
+                    🇮🇳 <span id="lang">मराठी</span>
+                </button>
+
+                <span class="live">
+                    ● LIVE
+                </span>
+            </div>
+
+        </header>
+
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <div class="stat-icon">📧</div>
+                <div>
+                    <small>EMAILS ANALYZED</small>
+                    <h2 id="emailCount">12,847</h2>
+                    <span class="green">+18.4%</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon red-bg">🚨</div>
+                <div>
+                    <small>THREATS DETECTED</small>
+                    <h2 id="threatCount">1,294</h2>
+                    <span class="red">+7.2%</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon orange-bg">⚠️</div>
+                <div>
+                    <small>HIGH RISK CASES</small>
+                    <h2>387</h2>
+                    <span class="orange">Attention</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon green-bg">✓</div>
+                <div>
+                    <small>THREATS BLOCKED</small>
+                    <h2>1,126</h2>
+                    <span class="green">87%</span>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="hero-grid">
+
+            <div class="hero">
+
+                <div class="hero-content">
+
+                    <span class="tag">🧠 AI-POWERED FORENSICS</span>
+
+                    <h2>
+                        Stop threats<br>
+                        <span>before they spread.</span>
+                    </h2>
+
+                    <p>
+                        Analyze suspicious emails, identify malicious
+                        indicators, trace infrastructure and generate
+                        forensic intelligence.
+                    </p>
+
+                    <a href="analyzer.html" class="primary-btn">
+                        🚀 Analyze Suspicious Email
+                    </a>
+
+                </div>
+
+                <div class="hero-shield">
+                    🛡️
+                </div>
+
+            </div>
+
+
+            <div class="risk-card">
+
+                <div class="card-header">
+                    <h3>Environment Risk</h3>
+                    <span class="green">LIVE</span>
+                </div>
+
+                <div class="risk-circle">
+                    <strong>74%</strong>
+                    <small>RISK</small>
+                </div>
+
+                <p>Current security environment</p>
+
+            </div>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <div>
+                    <h2>Recent Threat Activity</h2>
+                    <p>Latest analyzed security events</p>
+                </div>
+
+                <a href="intelligence.html" class="outline-btn">
+                    View Intelligence →
+                </a>
+
+            </div>
+
+
+            <div class="table-card">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>THREAT</th>
+                            <th>SENDER</th>
+                            <th>RISK</th>
+                            <th>DETECTION</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>🎣 Credential Phishing</td>
+                            <td>security@paypa1-support.com</td>
+                            <td class="red">96%</td>
+                            <td>Lookalike Domain</td>
+                            <td><b class="status blocked">BLOCKED</b></td>
+                        </tr>
+
+                        <tr>
+                            <td>💰 Invoice Fraud</td>
+                            <td>accounts@vendor-mail.net</td>
+                            <td class="red">89%</td>
+                            <td>BEC Pattern</td>
+                            <td><b class="status blocked">BLOCKED</b></td>
+                        </tr>
+
+                        <tr>
+                            <td>🔐 Account Verification</td>
+                            <td>support@secure-login.co</td>
+                            <td class="orange">71%</td>
+                            <td>Suspicious URL</td>
+                            <td><b class="status review">REVIEW</b></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+            <span>MAILTRACE AI © 2026</span>
+            <span>SIH26106 • AI Email Threat Detection & Forensic Intelligence</span>
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

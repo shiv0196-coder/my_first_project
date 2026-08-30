@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>MailTrace AI | Threat Intelligence</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+<aside class="sidebar">
+
+<div class="brand">
+
+<div class="logo">🛡️</div>
+
+<div>
+<h2>MAILTRACE</h2>
+<small>AI SECURITY</small>
+</div>
+
+</div>
+
+
+<nav>
+
+<a href="index.html">
+📊 Dashboard
+</a>
+
+<a href="analyzer.html">
+📧 Email Analyzer
+</a>
+
+<a href="investigation.html">
+🔎 Investigation
+</a>
+
+<a class="active"
+href="intelligence.html">
+🌐 Intelligence
+</a>
+
+<a href="reports.html">
+📄 Reports
+</a>
+
+<a href="about.html">
+ℹ️ About
+</a>
+
+</nav>
+
+
+<div class="system-status">
+
+<span></span>
+
+<div>
+<b>System Online</b>
+<small>Threat Intel Ready</small>
+</div>
+
+</div>
+
+</aside>
+
+
+<main class="main">
+
+<header class="topbar">
+
+<div>
+
+<small class="eyebrow">
+THREAT INTELLIGENCE
+</small>
+
+<h1>
+Threat Intelligence Center
+</h1>
+
+<p>
+Analyze indicators discovered during investigations.
+</p>
+
+</div>
+
+<input
+id="search"
+class="search"
+placeholder="Search indicators..."
+onkeyup="searchThreats()">
+
+</header>
+
+
+
+<section class="intel-cards">
+
+<div>
+<small>DOMAIN RISK</small>
+<strong>92/100</strong>
+
+<div class="progress">
+<i style="width:92%"></i>
+</div>
+
+</div>
+
+
+<div>
+<small>IP RISK</small>
+<strong>87/100</strong>
+
+<div class="progress">
+<i style="width:87%"></i>
+</div>
+
+</div>
+
+
+<div>
+<small>URL RISK</small>
+<strong>95/100</strong>
+
+<div class="progress">
+<i style="width:95%"></i>
+</div>
+
+</div>
+
+
+<div>
+<small>AI CONFIDENCE</small>
+<strong>94%</strong>
+
+<div class="progress">
+<i style="width:94%"></i>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="table-card">
+
+<table id="intelTable">
+
+<thead>
+
+<tr>
+
+<th>INDICATOR</th>
+<th>TYPE</th>
+<th>LOCATION</th>
+<th>RISK</th>
+<th>STATUS</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+<tr>
+
+<td>paypa1-support.com</td>
+
+<td>Domain</td>
+
+<td>Unknown</td>
+
+<td class="red">96%</td>
+
+<td>
+<span class="status blocked">
+MALICIOUS
+</span>
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>185.234.72.91</td>
+
+<td>IPv4</td>
+
+<td>🇷🇺 Russia</td>
+
+<td class="red">91%</td>
+
+<td>
+<span class="status blocked">
+HIGH RISK
+</span>
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>login-secure.xyz</td>
+
+<td>URL</td>
+
+<td>🇩🇪 Germany</td>
+
+<td class="orange">78%</td>
+
+<td>
+<span class="status review">
+REVIEW
+</span>
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>vendor-mail.net</td>
+
+<td>Domain</td>
+
+<td>Unknown</td>
+
+<td class="orange">72%</td>
+
+<td>
+<span class="status review">
+SUSPICIOUS
+</span>
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+
+<footer>
+
+<span>MAILTRACE AI © 2026</span>
+
+<span>
+Indicator Correlation Engine
+</span>
+
+</footer>
+
+</main>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
